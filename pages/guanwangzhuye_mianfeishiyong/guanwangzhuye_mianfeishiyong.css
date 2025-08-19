@@ -1,0 +1,238 @@
+.page {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.section {
+  padding: 1vh 10vw 1.3vh 5vw;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 8vw;
+  height: auto;
+  max-height: 4vh;
+}
+
+.image_1 {
+  margin-left: 2.5vw;
+  font-size: 0.8vw;
+  white-space: nowrap;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.image-container {
+  margin-left: 4vw;
+  width: 18vw;
+  height: 3vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.icon-img {
+  width: 1.2vw;
+  height: 1.2vw;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.group {
+  margin-left: 2vw;
+  display: flex;
+}
+
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 1.5vw;
+}
+
+.button-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.button-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 0.8vw;
+  padding: 0.5vh 1vw;
+  pointer-events: none;
+}
+/* ===================== 页面内容样式 ===================== */
+.image_2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.service-header {
+  position: relative;
+  width: 100%;
+}
+.service-text {
+  position: absolute;
+  top: 25%; /* 调整到更靠上的位置 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  white-space: nowrap; /* 防止文字换行 */
+}
+.service-text-1 {
+  position: absolute;
+  top: 50%; /* 调整到靠下的位置 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: rgb(67, 65, 65);
+  width: 50%; /* 设置宽度以便文字可以正常换行 */
+  text-align: center; /* 文字居中对齐 */
+  line-height: 1.6; /* 设置行间距 */
+}
+/* ===================== 页面内容样式-基本联系方式 ===================== */
+.contact-form-container {
+  background-color: #f5f5f5; /* 灰白色背景 */
+  padding: 100px;
+}
+
+.contact-form {
+  background-color: white; /* 大白框 */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin: 0 10px;
+  position: relative;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* 第三排特殊样式 */
+.form-row:last-child .form-group:last-child {
+  flex: 1.5; /* 备注框可以更宽 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin: 0 0 15px 0;
+  }
+}
+
+.form-input::placeholder {
+  color: #999; /* 淡灰色 */
+  font-style: italic; /* 可选：斜体显示 */
+}
+
+.form-input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form-input::-moz-placeholder {
+  color: #999;
+}
+
+.form-input:-ms-input-placeholder {
+  color: #999;
+}
+.submit-button-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.submit-button {
+  background-color: #333; /* 深灰色背景 */
+  color: white; /* 白色文字 */
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #555; /* 鼠标悬停时稍浅的灰色 */
+}
+
+.submit-button:active {
+  background-color: #222; /* 点击时更深的灰色 */
+  transform: translateY(1px);
+}
+.form-hint {
+  text-align: left;
+  margin: 10px 0 30px 50px; /* 上边距10px，下边距30px，左边距50px */
+  color: #666; /* 灰色文字 */
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+.form-hint-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,71 @@
+.ml-9 {
+  margin-left: 9px;
+}
+.page {
+  padding: 111px 32px 112px;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.section {
+  background-color: #ffffff;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  width: 100vw;
+  background: url(https://c.animaapp.com/me2l0bchx1IfXY/img/component-4.png) 50%
+    50% / cover;
+  position: relative;
+  width: 560px;
+  height: 640px;
+}
+.section_2 {
+  background: url(https://c.animaapp.com/me2l0bchx1IfXY/img/component-2.png) 50%
+    50% / cover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  position: relative;
+  width: 560px;
+  height: 640px;
+}
+.section_3 {
+  background: url(https://c.animaapp.com/me2l0bchx1IfXY/img/component-3.png) 50%
+    50% / cover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  position: relative;
+  width: 560px;
+  height: 640px;
+}
+.section_4 {
+  background: url(https://c.animaapp.com/me2l0bchx1IfXY/img/component-4.png) 50%
+    50% / cover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  position: relative;
+  width: 560px;
+  height: 640px;
+}
+.section_5 {
+  background: url(https://c.animaapp.com/me2l0bchx1IfXY/img/component-5.png) 50%
+    50% / cover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  position: relative;
+  width: 560px;
+  height: 640px;
+}
