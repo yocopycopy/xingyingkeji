@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="pages/shouye.html">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>星荧科技</title>
+    <title>星荧科技-产品中心</title>
     <!-- 全局样式 -->
     <link rel="stylesheet" href="./global.css" />
+    <!-- 当前页面样式 -->
+    <link rel="stylesheet" href="./zhongxin.css" />
     <!-- 全局JS -->
     <script type="text/javascript" src="./global.js"></script>
   </head>
@@ -20,7 +21,7 @@
           <img class="image" src="../assets/logo.png" alt="公司Logo" />
         </div>
         <!-- 导航菜单项 -->
-        <div class="image_1" onclick="onClick_1()">产品中心</div>
+        <div class="image_1" style="color: rgb(0, 255, 229);text-decoration: underline;">产品中心</div>
         <div class="image_1" onclick="onClick_2()">案例中心</div>
         <div class="image_1" onclick="onClick_3()">资源中心</div>
         <div class="image_1" onclick="onClick_4()">售后服务</div>
@@ -51,29 +52,27 @@
           </div>
         </div>
       </div>
-      
       <!-- 主体内容区域 -->
       <div class="group_2">
-        <!-- 左侧装饰图片 -->
-        <img src="../assets/左.png" class="view" onclick="onClick_7()" style="cursor: pointer;" alt="左装饰"/>
-        <!-- 主标题 -->
-        <div class="group_3">
-          <div class="image_15">下肢康复训练机器人</div>
-          <!-- 副标题 -->
-          <div class="image_18">智驱康复 步向新生</div>
-          <!-- 了解更多链接 -->
-          <div class="group_6">
-          <a href="./ziyuanzhongxin.html" style="text-decoration: none; color: inherit;">
-            <div>了解更多&gt;</div>
-          </a>
+        <!-- 背景框放在最上方 -->
+        <div class="group_1">
+          <img src="../assets/产品中心背景框.png" />
+          <!-- <img class="image_12" src="../../assets/小机器车.png" /> -->
         </div>
+  
+      <!-- 主标题 -->
+      <div class="group_3">
+        <div class="image_15">下肢康复训练机器人</div>
+        <!-- 副标题 -->
+        <div class="image_18">智驱康复 步向新生</div>
+        <!-- 了解更多链接 -->
+        <div class="group_6">
+          <div>了解更多&gt;</div>
         </div>
-        <!-- 中间主图，点击可交互 -->
-        <img class="main-image" src="../assets/机器人.png" style="cursor: pointer;" alt="主图" />
-        <!-- 右侧装饰图片，点击可交互 -->
-        <img src="../assets/右.png" class="view" onclick="onClick_7()" style="cursor: pointer;" alt="右装饰"/>
       </div>
-      
+      <!-- 中间主图，点击可交互 -->
+      <img class="main-image" src="../assets/机器人.png" style="cursor: pointer;" alt="主图" />
+      </div>
     </div>
   </body>
 </html>

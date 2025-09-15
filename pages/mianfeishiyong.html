@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星荧科技-免费试用</title>
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="./global.css" />
+    <!-- 当前页面样式（特有部分） -->
+    <link rel="stylesheet" href="./local.css" />
+    <!-- 全局JS -->
+    <script type="text/javascript" src="./global.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <!-- 顶部导航栏 -->
+      <div class="section">
+        <!-- 公司Logo，点击跳转首页 -->
+        <div onclick="onClick()">
+          <img class="image" src="../assets/logo.png" alt="公司Logo" />
+        </div>
+        <!-- 导航菜单项 -->
+        <div class="image_1" onclick="onClick_1()">产品中心</div>
+        <div class="image_1" onclick="onClick_2()">案例中心</div>
+        <div class="image_1" onclick="onClick_3()">资源中心</div>
+        <div class="image_1" onclick="onClick_4()">售后服务</div>
+        <div class="image_1 dropdown-container">
+          关于我们
+          <div class="dropdown-content">
+            <div class="section_3">
+              <div onclick="onClick_8()">公司介绍</div>
+              <div onclick="onClick_2()">合作机构</div>
+              <div onclick="onClick_9()">联系我们</div>
+            </div>
+          </div>
+        </div>
+        <!-- 搜索框区域 -->
+        <div class="search-box">
+          <input type="search" placeholder="搜索">
+          <button type="submit">🔍</button>
+        </div>
+        <!-- 右侧按钮组 -->
+        <div class="group">
+          <div class="button-container" onclick="onClick_5()">
+            <img class="button-bg" src="../assets/蓝色背景.png" alt="采购/合作按钮背景" />
+            <div class="button-text">采购/合作</div>
+          </div>
+          <div class="button-container">
+            <img class="button-bg" src="../assets/黄色背景.png" alt="免费试用按钮背景" />
+            <div class="button-text">免费试用</div>
+          </div>
+        </div>
+      </div>
+      <!-- 主体内容 -->
+      <div class="service-header">
+        <img class="image_2" src="../assets/免费试用.png" alt="免费试用" />
+        <div class="service-text">免费试用</div>
+        <div class="service-text-1">Starlight星荧科技——以星光为引，将前沿科技凝练成触手可及的品质好物。聚焦康复机器人研发，熔铸生物传感、自适应算法与智能交互技术，构建科技赋能的康复技术。</div>
+      </div>
+      <div class="contact-link-section">
+        <div class="contact-link-container">
+          <h2 class="contact-link-title">需要帮助？</h2>
+          <p class="contact-link-description">如需进一步了解或有任何疑问，欢迎联系我们</p>
+          <a href="lianxiwomen.html" class="contact-link-button">
+            联系我们
+          </a>
+        </div>
+      </div>
+      <!-- 主体内容-基本联系方式 -->
+      <div class="contact-form-container" style="display: none;">
+        <div class="contact-form">
+          <!-- 第一排 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">姓名*</label>
+              <input type="text" class="form-input" placeholder="请输入您的名字">
+            </div>
+            <div class="form-group">
+              <label class="form-label">国家/地区*</label>
+              <input type="text" class="form-input" placeholder="所属国家或地区">
+            </div>
+            <div class="form-group">
+              <label class="form-label">联系方式*</label>
+              <input type="text" class="form-input" placeholder="请输入手机号">
+            </div>
+          </div>
+          
+          <!-- 第二排 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">公司/机构/个人*</label>
+              <input type="text" class="form-input" placeholder="请输入公司或机构名称。个人填写：个人咨询">
+            </div>
+            <div class="form-group">
+              <label class="form-label">邮箱</label>
+              <input type="email" class="form-input" placeholder="请输入邮箱地址">
+            </div>
+            <div class="form-group">
+              <label class="form-label">联系地址*</label>
+              <input type="text" class="form-input" placeholder="请输入您的联系地址">
+            </div>
+          </div>
+          
+          <!-- 第三排 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">试用产品选择*</label>
+              <input type="text" class="form-input" placeholder="请选择产品名称或型号">
+            </div>
+            <div class="form-group">
+              <label class="form-label">备注</label>
+              <input type="text" class="form-input" placeholder="备注信息">
+            </div>
+          </div>
+        </div>
+        <!-- 主体内容-提交按钮 -->
+        <div class="submit-button-container">
+          <button type="submit" class="submit-button">提交</button>
+        </div>
+      </div>
+      
+      <!-- 文字提示 -->
+      <div class="form-hint">
+        <span class="form-hint-title">试用注意事项：</span>
+        在您申请starlight星荧科技的产品免费试用服务前，请您仔细阅读本试用注意事项。
+        ·当您提交免费试用申请时，即代表您已阅读并同意本试用注意事项。
+        ·本免费试用服务需符合特定申请资格，具体可咨询客服了解详情。
+        ·提交试用申请后，我们将在三个工作日内与您联系确认相关信息，请务必保证填写的联系信息准确无误。
+        ·免费试用有固定期限，具体时长将在确认试用时告知，试用期满请按照约定及时返回本产品。
+        ·试用期间，请妥善保管产品，避免人为损坏、丢失，若因个人原因造成产品问题，需承担相应责任。
+        ·您可以直接联系我们的客服团队，获取更多产品信息和试用服务详情。
+        ·若在规定时间内未收到我们的联系，可能是申请未成功，请直接联系我们或再次提交申请。
+      </div>
+    </div>
+  </body>
+</html>
