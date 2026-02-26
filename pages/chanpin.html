@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星荧科技-产品资料</title>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./ziyuanzhongxin.css" />
+    <script type="text/javascript" src="./global.js"></script>
+    <style>
+      .chanpin-page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 16px 40px;
+      }
+
+      .video-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+
+      .video-card {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #000;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .video-card iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .video-link-card {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 8px;
+        border: 1px solid #e8e8e8;
+        background: #f8fafc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        color: #1f2937;
+        text-align: center;
+        padding: 16px;
+        box-sizing: border-box;
+      }
+
+      .open-video-link {
+        display: inline-block;
+        padding: 10px 18px;
+        border-radius: 6px;
+        background: #1677ff;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .video-fallback {
+        margin-top: -8px;
+      }
+
+      .section-title {
+        margin: 8px 0 12px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #111827;
+      }
+
+      .image-title {
+        margin: 8px 0 12px;
+        font-size: 28px;
+        font-weight: 700;
+        color: #111827;
+      }
+
+      .image-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .image-list img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="section">
+        <div onclick="onClick()">
+          <img class="image" src="../assets/logo.png" alt="公司Logo" />
+        </div>
+        <div class="image_1" style="color: rgb(0, 255, 229); text-decoration: underline;">产品中心</div>
+        <div class="image_1" onclick="onClick_2()">案例中心</div>
+        <div class="image_1" onclick="onClick_3()">资源中心</div>
+        <div class="image_1" onclick="onClick_4()">售后服务</div>
+        <div class="image_1 dropdown-container">
+          关于我们
+          <div class="dropdown-content">
+            <div class="section_3">
+              <div onclick="onClick_8()">公司介绍</div>
+              <div onclick="onClick_2()">合作机构</div>
+              <div onclick="onClick_9()">联系我们</div>
+            </div>
+          </div>
+        </div>
+        <div class="search-box">
+          <input type="search" placeholder="搜索" />
+          <button type="submit">🔍</button>
+        </div>
+        <div class="group">
+          <div class="button-container" onclick="onClick_5()">
+            <img class="button-bg" src="../assets/蓝色背景.png" alt="采购/合作按钮背景" />
+            <div class="button-text">采购/合作</div>
+          </div>
+          <div class="button-container" onclick="onClick_6()">
+            <img class="button-bg" src="../assets/黄色背景.png" alt="免费试用按钮背景" />
+            <div class="button-text">免费试用</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chanpin-page">
+        <div class="video-list">
+          <h2 class="section-title">下肢康复训练机器人 介绍</h2>
+          <div class="video-card">
+            <iframe
+              src="https://player.bilibili.com/player.html?bvid=BV1LufYBaEas&page=1&autoplay=0"
+              title="下肢康复训练机器人-Bilibili"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h2 class="section-title">下肢康复训练机器人 用户测试</h2>
+          <div class="video-card">
+            <iframe
+              width="510"
+              height="498"
+              src="https://player.youku.com/embed/XNjUxNjYyMTEyOA=="
+              frameborder="0"
+              allowfullscreen
+              title="下肢康复训练机器人-Youku"
+            ></iframe>
+          </div>
+          <div class="video-fallback">
+            <a
+              class="open-video-link"
+              href="https://v.youku.com/v_show/id_XNjUxNjYyMTEyOA==.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              若内嵌无法播放，点此外部视频页面查看
+            </a>
+          </div>
+        </div>
+
+        <h2 class="image-title">产品手册</h2>
+        <div class="image-list">
+          <img src="../assets/chanpinshouce_xiazhikangfuxunlianjiqiren/产品手册_页面_1.jpg" alt="产品手册页面1" />
+          <img src="../assets/chanpinshouce_xiazhikangfuxunlianjiqiren/产品手册_页面_2.jpg" alt="产品手册页面2" />
+          <img src="../assets/chanpinshouce_xiazhikangfuxunlianjiqiren/产品手册_页面_3.jpg" alt="产品手册页面3" />
+          <img src="../assets/chanpinshouce_xiazhikangfuxunlianjiqiren/产品手册_页面_4.jpg" alt="产品手册页面4" />
+          <img src="../assets/chanpinshouce_xiazhikangfuxunlianjiqiren/产品手册_页面_5.jpg" alt="产品手册页面5" />
+          <img src="../assets/chanpinshouce_xiazhikangfuxunlianjiqiren/产品手册_页面_6.jpg" alt="产品手册页面6" />
+          <img src="../assets/chanpinshouce_xiazhikangfuxunlianjiqiren/产品手册_页面_7.jpg" alt="产品手册页面7" />
+          <img src="../assets/chanpinshouce_xiazhikangfuxunlianjiqiren/产品手册_页面_8.jpg" alt="产品手册页面8" />
+        </div>
+      </div>
+
+      <div class="contact-info-container">
+        <div class="contact-box">
+          <div class="box-title">在线联系</div>
+          <div class="contact-details">
+            <p>联系电话：18513721835</p>
+            <p>邮箱：contact@softstarlight.com</p>
+            <img src="../assets/微信联系方式.png" alt="微信联系方式" class="social-icon-1" />
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <div class="box-title">社交媒体</div>
+          <div class="social-media">
+            <div class="social-item">
+              <img src="../assets/微信.jpg" alt="微信公众号" class="social-icon" />
+              <span>微信公众号</span>
+            </div>
+            <div class="social-item">
+              <img src="../assets/抖音.jpg" alt="抖音" class="social-icon" />
+              <span>抖音</span>
+            </div>
+            <div class="social-item">
+              <img src="../assets/小红书.png" alt="小红书" class="social-icon" />
+              <span>小红书</span>
+            </div>
+            <div class="social-item">
+              <img src="../assets/b站.jpg" alt="b站" class="social-icon" />
+              <span>b站</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

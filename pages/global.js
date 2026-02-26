@@ -3,7 +3,8 @@ function onClick() {
   location.href = '../pages/shouye.html';
 }
 function onClick_1() {
-  location.href = '../pages/chanpinzhongxin.html';
+  // location.href = '../pages/chanpinzhongxin.html';
+  location.href = '../pages/chanpin.html';
 }
 function onClick_2() {
   location.href = '../pages/anlizhongxin.html';
