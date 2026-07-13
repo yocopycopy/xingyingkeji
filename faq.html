@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常见问题 - 星荧科技</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header light" data-header></header>
+    <main class="faq-page" data-faq-page>
+      <section class="faq-hero">
+        <h1>常见问题</h1>
+      </section>
+
+      <section class="faq-shell">
+        <aside class="faq-sidebar" data-faq-sidebar aria-label="常见问题分类"></aside>
+        <article class="faq-panel" data-faq-content></article>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+
+    <script>
+      window.faqGroups = [
+        {
+          category: "产品使用",
+          items: [
+            {
+              id: "rehab-users",
+              title: "康复机器人适用于哪些用户",
+              answer: [
+                "适用于脑卒中、脊髓损伤、脑外伤及术后康复等存在下肢运动功能障碍的人群，可用于步行训练、运动功能恢复及康复评估。",
+                "具体使用方案需由专业医疗人员根据患者情况制定。",
+              ],
+            },
+            {
+              id: "start-training",
+              title: "如何开始训练",
+              answer: ["首次使用前，请由专业康复人员完成设备评估与参数设置，并根据患者康复情况制定个性化训练方案。"],
+            },
+            {
+              id: "training-data",
+              title: "训练数据是否自动保存",
+              answer: ["支持自动记录训练时间、训练参数及康复数据，便于康复过程追踪、效果评估与历史数据查询。"],
+            },
+            {
+              id: "custom-plan",
+              title: "是否支持个性化训练方案",
+              answer: ["支持。可根据患者的康复阶段、运动能力及训练目标，灵活调整训练模式、强度和训练计划。"],
+            },
+          ],
+        },
+        {
+          category: "保修政策",
+          items: [
+            {
+              id: "warranty-period",
+              title: "产品保修期多久",
+              answer: ["整机及核心部件提供标准保修服务，具体期限根据产品型号或合同约定执行。"],
+            },
+            {
+              id: "warranty-scope",
+              title: "哪些情况属于保修范围",
+              answer: ["非人为损坏、正常使用过程中出现的硬件或系统故障均可申请保修服务。"],
+            },
+            {
+              id: "warranty-exclusions",
+              title: "哪些情况不属于保修范围",
+              answer: ["人为损坏、违规操作、私自拆机或不可抗力造成的损坏不在保修范围内。"],
+            },
+            {
+              id: "warranty-request",
+              title: "如何申请保修服务",
+              answer: ["可通过官方渠道提交售后申请，技术团队将提供检测与维修支持。"],
+            },
+          ],
+        },
+        {
+          category: "技术支持",
+          items: [
+            {
+              id: "device-issue",
+              title: "设备异常如何处理",
+              answer: ["可根据系统提示进行初步排查，或联系技术支持获取远程诊断。"],
+            },
+            {
+              id: "remote-support",
+              title: "是否提供远程支持",
+              answer: ["提供远程技术支持与系统诊断服务，协助快速定位问题。"],
+            },
+            {
+              id: "technical-contact",
+              title: "如何联系技术支持",
+              answer: ["针对复杂问题或临床场景，可通过“联系我们”在线申请工程师现场技术支持。"],
+            },
+            {
+              id: "software-upgrade",
+              title: "如何获取软件升级服务",
+              answer: ["系统支持在线升级，官方会定期推送版本更新与功能优化。"],
+            },
+          ],
+        },
+        {
+          category: "医疗合作",
+          items: [
+            {
+              id: "clinical-cooperation",
+              title: "如何申请临床合作",
+              answer: ["可通过“联系我们”或商务渠道在线提交合作申请，由团队对接评估。"],
+            },
+            {
+              id: "trial-validation",
+              title: "是否支持产品试用验证",
+              answer: ["支持，可提供试用与临床验证方案配合医院进行评估。"],
+            },
+            {
+              id: "training-support",
+              title: "是否提供培训支持",
+              answer: ["提供设备使用培训与操作指导，确保医护人员快速上手。"],
+            },
+            {
+              id: "cooperation-cases",
+              title: "如何了解合作案例",
+              answer: ["可通过官网或商务对接获取合作案例与技术资料。"],
+            },
+          ],
+        },
+      ];
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>

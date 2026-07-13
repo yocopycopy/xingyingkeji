@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>产品中心 - 星荧科技</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header light" data-header></header>
+    <main class="products-page">
+      <section class="product-catalog">
+        <aside class="catalog-tabs" aria-label="产品分类">
+          <button class="active" data-product-tab="rehab">
+            <img src="./assets/products/tab-rehab.png" alt="" />
+            下肢康复训练机器人
+          </button>
+          <button data-product-tab="osa">
+            <img src="./assets/products/tab-osa.png" alt="" />
+            OSA睡眠枕
+          </button>
+        </aside>
+
+        <div class="catalog-panel active" data-product-panel="rehab">
+          <a class="product-card" href="./product-medical.html">
+            <img src="./assets/products/medical-version.png" alt="医用版下肢康复训练机器人" />
+            <span>医用版</span>
+          </a>
+          <a class="product-card" href="./product-home.html">
+            <img src="./assets/products/home-version.png" alt="家庭版下肢康复训练机器人" />
+            <span>家庭版</span>
+          </a>
+        </div>
+
+        <div class="catalog-panel" data-product-panel="osa">
+          <a class="product-card" href="#">
+            <img src="./assets/products/osa-pillow.png" alt="OSA睡眠枕" />
+            <span>OSA睡眠枕</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

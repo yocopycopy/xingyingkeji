@@ -1,79 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
   <head>
-    <base href="pages/shouye.html">
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>星荧科技</title>
-    <!-- 全局样式 -->
-    <link rel="stylesheet" href="./global.css" />
-    <!-- 全局JS -->
-    <script type="text/javascript" src="./global.js"></script>
+    <title>星荧科技 STΛRLIGHT</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <div class="page">
-      <!-- 顶部导航栏 -->
-      <div class="section">
-        <!-- 公司Logo，点击跳转首页 -->
-        <div onclick="onClick()">
-          <img class="image" src="../assets/logo.png" alt="公司Logo" />
+  <body class="page-home">
+    <header class="site-header dark" data-header data-scroll-threshold="120" data-scroll-reset-threshold="96"></header>
+
+    <main>
+      <section class="video-hero">
+        <video src="./assets/home/hero-video.mp4" autoplay muted loop playsinline></video>
+        <div class="video-fallback">视频</div>
+      </section>
+
+      <section class="feature-hero product-spotlight">
+        <img class="hero-bg" src="./assets/home/medical-bg.png" alt="" />
+        <div class="feature-copy light">
+          <p>医疗机构适用</p>
+          <h1>下肢康复训练机器人</h1>
+          <div class="accent-line"></div>
+          <p class="lead">智驭康复、步向新生</p>
+          <a class="text-link" href="./product-medical.html">了解更多</a>
         </div>
-        <!-- 导航菜单项 -->
-        <div class="image_1" onclick="onClick_1()">产品中心</div>
-        <div class="image_1" onclick="onClick_2()">案例中心</div>
-        <div class="image_1" onclick="onClick_3()">资源中心</div>
-        <div class="image_1" onclick="onClick_4()">售后服务</div>
-        <div class="image_1 dropdown-container">
-          关于我们
-          <div class="dropdown-content">
-            <div class="section_3">
-              <div onclick="onClick_8()">公司介绍</div>
-              <div onclick="onClick_2()">合作机构</div>
-              <div onclick="onClick_9()">联系我们</div>
-            </div>
-          </div>
+        <img class="spotlight-product" src="./assets/home/medical-product.png" alt="下肢康复训练机器人医用版" />
+      </section>
+
+      <section class="partners section">
+        <div class="section-title">
+          <h2>合作伙伴</h2>
+          <p>联合临床与科研，推动医疗创新</p>
         </div>
-        <!-- 搜索框区域 -->
-        <div class="search-box">
-          <input type="search" placeholder="搜索">
-          <button type="submit">🔍</button>
+        <img src="./assets/home/partners.png" alt="合作伙伴机构" />
+      </section>
+
+      <section class="scenes section muted">
+        <div class="section-title">
+          <h2>应用场景</h2>
+          <p>覆盖医疗机构、家庭康复，满足多元康复需求</p>
         </div>
-        <!-- 右侧按钮组 -->
-        <div class="group">
-          <div class="button-container" onclick="onClick_5()">
-            <img class="button-bg" src="../assets/蓝色背景.png" alt="采购/合作按钮背景" />
-            <div class="button-text">采购/合作</div>
-          </div>
-          <div class="button-container" onclick="onClick_6()">
-            <img class="button-bg" src="../assets/黄色背景.png" alt="免费试用按钮背景" />
-            <div class="button-text">免费试用</div>
-          </div>
+        <div class="scene-grid">
+          <article>
+            <img src="./assets/home/scene-medical.png" alt="医疗康复场景" />
+            <h3>智能康复高效协同医疗场景</h3>
+          </article>
+          <article>
+            <img src="./assets/home/scene-home.png" alt="家庭康复场景" />
+            <h3>家庭智能康复训练场景</h3>
+          </article>
         </div>
-      </div>
-      
-      <!-- 主体内容区域 -->
-      <div class="group_2">
-        <!-- 左侧装饰图片 -->
-        <img src="../assets/左.png" class="view" onclick="onClick_7()" style="cursor: pointer;" alt="左装饰"/>
-        <!-- 主标题 -->
-        <div class="group_3">
-          <div class="image_15">下肢康复训练机器人</div>
-          <!-- 副标题 -->
-          <div class="image_18">智驱康复 步向新生</div>
-          <!-- 了解更多链接 -->
-          <div class="group_6">
-          <a href="./ziyuanzhongxin.html" style="text-decoration: none; color: inherit;">
-            <div>了解更多&gt;</div>
-          </a>
-        </div>
-        </div>
-        <!-- 中间主图，点击可交互 -->
-        <img class="main-image" src="../assets/机器人.png" style="cursor: pointer;" alt="主图" />
-        <!-- 右侧装饰图片，点击可交互 -->
-        <img src="../assets/右.png" class="view" onclick="onClick_7()" style="cursor: pointer;" alt="右装饰"/>
-      </div>
-      
-    </div>
+      </section>
+
+      <section class="quick-actions muted">
+        <a class="action-card" href="./trial.html">
+          <img src="./assets/home/action-trial.png" alt="" />
+          <span>预约体验</span>
+        </a>
+        <a class="action-card" href="./placeholder.html?feature=shop">
+          <img src="./assets/home/action-shop.png" alt="" />
+          <span>线上商城</span>
+        </a>
+        <a class="action-card" href="./contact.html">
+          <img src="./assets/home/action-contact.png" alt="" />
+          <span>联系我们</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+    <script src="./app.js"></script>
   </body>
 </html>

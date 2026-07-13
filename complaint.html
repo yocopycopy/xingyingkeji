@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我要投诉 - 星荧科技</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header light" data-header></header>
+    <main class="complaint-page">
+      <section class="complaint-shell">
+        <div class="complaint-title">
+          <img src="./assets/support/after-sales-complaint.png" alt="" />
+          <h1>我要投诉</h1>
+        </div>
+
+        <div class="complaint-layout">
+          <div class="complaint-form-wrap">
+            <form class="complaint-form" data-complaint-form>
+              <div class="complaint-field">
+                <label for="complaint-name">姓名*</label>
+                <input id="complaint-name" name="name" required />
+              </div>
+              <div class="complaint-field">
+                <label for="complaint-region">所在地区*</label>
+                <input id="complaint-region" name="region" required />
+              </div>
+              <div class="complaint-field">
+                <label for="complaint-phone">电话*</label>
+                <input id="complaint-phone" name="phone" required />
+              </div>
+              <div class="complaint-field">
+                <label for="complaint-type">投诉类型*</label>
+                <select id="complaint-type" name="type" required>
+                  <option value="">请选择投诉类型</option>
+                  <option>产品质量问题</option>
+                  <option>设备运行故障</option>
+                  <option>使用体验问题</option>
+                  <option>技术支持问题</option>
+                  <option>售后服务问题</option>
+                  <option>物流与交付问题</option>
+                  <option>商务与合作问题</option>
+                  <option>其他问题</option>
+                </select>
+              </div>
+              <div class="complaint-field">
+                <label for="complaint-email">邮箱*</label>
+                <input id="complaint-email" name="email" type="email" required />
+              </div>
+              <div class="complaint-field wide">
+                <label for="complaint-message">问题描述*</label>
+                <textarea id="complaint-message" name="message" required></textarea>
+              </div>
+              <button class="complaint-submit" type="submit">提交</button>
+              <p class="complaint-status" data-complaint-status aria-live="polite"></p>
+            </form>
+            <div class="complaint-form-overlay" role="status">
+              <p>功能升级中，请优先查看 <a href="./contact.html">联系我们</a> 页面</p>
+            </div>
+          </div>
+
+          <aside class="complaint-contact">
+            <img class="complaint-logo" src="./assets/support/complaint-logo.png" alt="STΛRLIGHT 星荧科技" />
+            <p class="complaint-contact-row phone"><span>投诉电话：</span></p>
+            <p class="complaint-contact-row email"><span>邮箱：</span><strong>berny@softstarlight.com</strong></p>
+            <p class="complaint-note">我们将在48小时内给出处理反馈</p>
+            <img class="complaint-qr" src="./assets/support/complaint-qr.png" alt="微信公众号二维码" />
+            <p class="complaint-qr-label">微信公众号</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

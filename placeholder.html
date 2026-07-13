@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>功能升级中 - 星荧科技</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header light" data-header></header>
+    <main class="placeholder-page">
+      <section class="placeholder-shell">
+        <p class="placeholder-kicker">STARLIGHT</p>
+        <h1>功能升级中</h1>
+        <p class="placeholder-copy">相关内容正在完善，欢迎先联系我们获取最新信息与服务支持。</p>
+        <p class="placeholder-countdown"><strong data-redirect-countdown>10</strong> 秒后将自动跳转至<a href="./contact.html">联系我们</a>页面</p>
+        <a class="placeholder-link" href="./contact.html">立即联系我们</a>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="./app.js"></script>
+    <script>
+      (() => {
+        const target = "./contact.html";
+        const countdown = document.querySelector("[data-redirect-countdown]");
+        let remaining = 10;
+
+        const timer = window.setInterval(() => {
+          remaining -= 1;
+          if (countdown) countdown.textContent = String(remaining);
+          if (remaining <= 0) {
+            window.clearInterval(timer);
+            window.location.href = target;
+          }
+        }, 1000);
+      })();
+    </script>
+  </body>
+</html>

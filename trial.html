@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>预约体验 - 星荧科技</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header light" data-header></header>
+    <main class="trial-page">
+      <section class="trial-hero">
+        <div class="trial-hero-copy">
+          <h1>预约体验</h1>
+          <p>让康复训练更简单、更可控</p>
+        </div>
+      </section>
+
+      <section class="trial-section">
+        <div class="trial-panel">
+          <div class="trial-form-wrap">
+            <form class="trial-form" data-trial-form>
+              <div class="trial-field">
+                <label for="trial-name">姓名*</label>
+                <input id="trial-name" name="name" placeholder="请输入您的名字" required />
+              </div>
+              <div class="trial-field">
+                <label for="trial-region">国家/地区*</label>
+                <input id="trial-region" name="region" placeholder="所属国家或地区" required />
+              </div>
+              <div class="trial-field">
+                <label for="trial-phone">联系方式*</label>
+                <input id="trial-phone" name="phone" placeholder="请输入手机号" required />
+              </div>
+              <div class="trial-field">
+                <label for="trial-organization">公司/机构/个人*</label>
+                <input id="trial-organization" name="organization" placeholder="请输入公司或机构名称。个人请填写：个人咨询" required />
+              </div>
+              <div class="trial-field">
+                <label for="trial-email">邮箱</label>
+                <input id="trial-email" name="email" type="email" placeholder="请输入邮箱地址" />
+              </div>
+              <div class="trial-field">
+                <label for="trial-address">联系地址*</label>
+                <input id="trial-address" name="address" placeholder="请输入您的联系地址" required />
+              </div>
+              <div class="trial-field">
+                <label for="trial-product">试用产品选择*</label>
+                <select id="trial-product" name="product" required>
+                  <option value="">请选择产品名称或型号</option>
+                  <option>下肢康复训练机器人（医用版）</option>
+                  <option>下肢康复训练机器人（家庭版）</option>
+                  <option>OSA睡眠枕</option>
+                </select>
+              </div>
+              <div class="trial-field trial-field-wide">
+                <label for="trial-note">备注</label>
+                <input id="trial-note" name="note" placeholder="备注信息" />
+              </div>
+
+              <button class="trial-submit" type="submit">提交</button>
+              <p class="trial-status" data-trial-status aria-live="polite"></p>
+            </form>
+            <div class="trial-form-overlay" role="status">
+              <p>功能升级中，请优先查看 <a href="./contact.html">联系我们</a> 页面</p>
+            </div>
+          </div>
+
+          <section class="trial-notes" aria-label="试用注意事项">
+            <h2>试用注意事项：</h2>
+            <p>在您申请 starlight 的产品免费试用服务前，请仔细阅读本试用注意事项。</p>
+            <ul>
+              <li>当您提交免费试用申请时，即代表您已阅读并同意本试用注意事项。</li>
+              <li>本免费试用服务需符合特定申请资格，具体可咨询客服了解详情。</li>
+              <li>提交试用申请后，我们将在三个工作日内与您联系确认相关信息，请务必保证填写的联系信息准确无误。</li>
+              <li>免费试用有固定期限，具体时长将在确认试用时告知，试用期满请按约定及时返还产品。</li>
+              <li>试用期间，请妥善保管产品，避免人为损坏、丢失，若因个人原因造成产品问题，需承担相应责任。</li>
+              <li>您可以直接联系我们的客服团队，获取关于试用的更详细信息。</li>
+              <li>若在规定时间内未收到我们的联系，可能是申请未成功，请直接联系我们或再次提交申请。</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

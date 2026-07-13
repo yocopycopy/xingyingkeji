@@ -1,0 +1,43 @@
+# _delete
+/_delete
+
+
+# Source reference folders
+/网页素材/
+/网页设计/
+
+# Dependencies and build output
+/node_modules/
+/dist/
+/build/
+/.next/
+/.output/
+
+# Local previews and deployment state
+/.codex-preview/
+/.vercel/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
