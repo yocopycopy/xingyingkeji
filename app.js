@@ -412,7 +412,7 @@ function renderFooter() {
         </div>
         <p>联系电话</p>
         <p>18513721835</p>
-        <p>contact@starlight.com</p>
+        <p>contact@softstarlight.com</p>
         <p>北京市朝阳区安贞里一区1号北京创业大厦A座302</p>
         <div class="socials">
           <img src="./assets/footer/wechat.png" alt="微信" />
