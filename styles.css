@@ -1084,6 +1084,37 @@ a {
   object-fit: contain;
 }
 
+@media (min-width: 1025px) {
+  .medical-edition-section {
+    position: relative;
+    height: min(900px, 46.875vw);
+    min-height: 0;
+    overflow: hidden;
+    padding: 0;
+    background: #eef6ff
+      url("./assets/product-medical/edition-bg.png")
+      center / 100% 100% no-repeat;
+  }
+
+  .medical-edition-section > div {
+    position: absolute;
+    left: 6.25%;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  .medical-edition-section img {
+    position: absolute;
+    top: 50%;
+    right: clamp(32px, 3.2vw, 62px);
+    width: min(42vw, 800px);
+    max-height: none;
+    margin: 0;
+    transform: translateY(-50%);
+  }
+}
+
 .core-grid {
   width: min(1320px, 100%);
   margin: 0 auto;
@@ -1999,6 +2030,7 @@ a {
 }
 
 .after-sales-page {
+  display: flow-root;
   background: #f1f2f3;
 }
 
@@ -2106,6 +2138,7 @@ a {
 }
 
 .downloads-page {
+  display: flow-root;
   background: #f1f2f3;
 }
 
